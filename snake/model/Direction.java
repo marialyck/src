@@ -1,4 +1,4 @@
-package snakey;
+package snake.model;
 
 public enum Direction {
 

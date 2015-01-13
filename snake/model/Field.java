@@ -1,4 +1,6 @@
-package snakey;
+package snake.model;
+
+import snake.model.Field;
 
 public class Field {
 
@@ -7,6 +9,16 @@ public class Field {
 	public Field(int row, int column) {
 		this.row = row;
 		this.column = column;
+	}
+	
+	public boolean equals(Field field) {
+		if(field.column == this.column){
+			if(field.row == this.row){
+				return true;
+			}
+		}
+			return false;
+		
 	}
 
 	public int getRow() {
